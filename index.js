@@ -1,9 +1,8 @@
-const { ApolloServer, PubSub } = require('apollo-server');
-const mongoose = require ("mongoose");
-const { getHeapCodeStatistics } = require('v8');
-const { MONGODB } = require('./config.js');
-const resolvers = require('./graphql/resolvers');
-const typeDefs = require('./graphql/typeDefs');
+const { ApolloServer, PubSub } = require("apollo-server");
+const mongoose = require("mongoose");
+const typeDefs = require('./graphql/typeDefs')
+const resolvers = require('./graphql/resolvers')
+const { MONGODB } = require("./config.js");
 
 const pubsub = new PubSub();
 
